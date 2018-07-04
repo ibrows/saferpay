@@ -1,6 +1,6 @@
 <?php
 
-namespace Payment\Saferpay\Data;
+namespace Ibrows\Saferpay\Data;
 
 interface PayCompleteResponseInterface
 {

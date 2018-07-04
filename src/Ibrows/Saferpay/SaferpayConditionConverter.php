@@ -1,6 +1,6 @@
 <?php
 
-namespace Payment\Saferpay;
+namespace Ibrows\Saferpay;
 
 class SaferpayConditionConverter
 {

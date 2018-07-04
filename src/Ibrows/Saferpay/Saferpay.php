@@ -1,15 +1,15 @@
 <?php
 
-namespace Payment\Saferpay;
+namespace Ibrows\Saferpay;
 
 use Payment\HttpClient\HttpClientInterface;
-use Payment\Saferpay\Data\Collection\CollectionItemInterface;
-use Payment\Saferpay\Data\PayCompleteParameter;
-use Payment\Saferpay\Data\PayCompleteParameterInterface;
-use Payment\Saferpay\Data\PayCompleteResponse;
-use Payment\Saferpay\Data\PayConfirmParameter;
-use Payment\Saferpay\Data\PayInitParameterInterface;
-use Payment\Saferpay\Exception\NoPasswordGivenException;
+use Ibrows\Saferpay\Data\Collection\CollectionItemInterface;
+use Ibrows\Saferpay\Data\PayCompleteParameter;
+use Ibrows\Saferpay\Data\PayCompleteParameterInterface;
+use Ibrows\Saferpay\Data\PayCompleteResponse;
+use Ibrows\Saferpay\Data\PayConfirmParameter;
+use Ibrows\Saferpay\Data\PayInitParameterInterface;
+use Ibrows\Saferpay\Exception\NoPasswordGivenException;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

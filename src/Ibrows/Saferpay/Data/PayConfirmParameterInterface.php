@@ -1,6 +1,6 @@
 <?php
 
-namespace Payment\Saferpay\Data;
+namespace Ibrows\Saferpay\Data;
 
 interface PayConfirmParameterInterface
 {
@@ -40,7 +40,7 @@ interface PayConfirmParameterInterface
     const ACCOUNTID = 'ns[..15]';
 
     /**
-     * Payment amount in the smallest currency unit.
+     * Ibrows amount in the smallest currency unit.
      * For example, "1230" corresponding amount in euro 12,30.
      */
     const AMOUNT = 'n[..8]';

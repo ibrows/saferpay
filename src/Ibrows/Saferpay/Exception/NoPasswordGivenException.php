@@ -1,6 +1,6 @@
 <?php
 
-namespace Payment\Saferpay\Exception;
+namespace Ibrows\Saferpay\Exception;
 
 class NoPasswordGivenException extends \Exception
 {
