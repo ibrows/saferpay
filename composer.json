@@ -1,5 +1,5 @@
 {
-    "name": "ibrows/saferpay",
+    "name": "payment/saferpay",
     "type": "library",
     "description": "Saferpay payment service library",
     "keywords": ["saferpay", "payment", "e-commerce"],
