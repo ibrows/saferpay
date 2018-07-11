@@ -1,11 +1,13 @@
 <?php
 
-namespace Ibrows\Saferpay\Data\Billpay;
+namespace Payment\Saferpay\Data\Billpay;
 
-interface BillpayPayInitParameterInterface
+interface BillpayPayConfirmParameterInterface
 {
-    const PROVIDERSET_BILLPAY_LSV = 1218;
-    const PROVIDERSET_BILLPAY_INVOICE = 1219;
+    /**
+     * optional
+     */
+    const COMPANY = 'ans[..50]';
 
     /**
      * optional, if gender is not "c"
@@ -14,15 +16,59 @@ interface BillpayPayInitParameterInterface
      */
     const LEGALFORM = 'a[..4]';
 
-    const LEGALFORM_GMBH = 'gmbh';
-    const LEGALFORM_AG = 'ag';
-    const LEGALFORM_MISC = 'misc';
+    /**
+     * optional
+     * Values: "f", "m", "c" (company)
+     */
+    const GENDER = 'a[1]';
+
+    /**
+     * optional
+     */
+    const FIRSTNAME = 'ans[..50]';
+
+    /**
+     * optional
+     */
+    const LASTNAME = 'ans[..50]';
+
+    /**
+     * optional
+     */
+    const STREET = 'ans[..50]';
 
     /**
      * optional
      * address addition if needed
      */
     const ADDRESSADDITION = 'an[..50]';
+
+    /**
+     * optional
+     */
+    const ZIP = 'an[..10]';
+
+    /**
+     * optional
+     */
+    const CITY = 'ans[..50]';
+
+    /**
+     * optional
+     * Country code according to ISO 3166.
+     * @link http://support.saferpay.de/download/CountryList.pdf.
+     */
+    const COUNTRY = 'a[2]';
+
+    /**
+     * optional
+     */
+    const EMAIL = 'ans[..50]';
+
+    /**
+     * optional
+     */
+    const PHONE = 'ns[..20]';
 
     /**
      * optional
@@ -81,6 +127,17 @@ interface BillpayPayInitParameterInterface
     const DELIVERY_PHONE = 'ns[..50]';
 
     /**
+     * @param string $company
+     * @return $this
+     */
+    public function setCompany($company);
+
+    /**
+     * @return string
+     */
+    public function getCompany();
+
+    /**
      * @param string $legalform
      * @return $this
      */
@@ -92,6 +149,50 @@ interface BillpayPayInitParameterInterface
     public function getLegalform();
 
     /**
+     * @param string $gender
+     * @return $this
+     */
+    public function setGender($gender);
+
+    /**
+     * @return string
+     */
+    public function getGender();
+
+    /**
+     * @param string $firstname
+     * @return $this
+     */
+    public function setFirstname($firstname);
+
+    /**
+     * @return string
+     */
+    public function getFirstname();
+
+    /**
+     * @param string $lastname
+     * @return $this
+     */
+    public function setLastname($lastname);
+
+    /**
+     * @return string
+     */
+    public function getLastname();
+
+    /**
+     * @param string $street
+     * @return $this
+     */
+    public function setStreet($street);
+
+    /**
+     * @return string
+     */
+    public function getStreet();
+
+    /**
      * @param string $addressAddition
      * @return $this
      */
@@ -101,6 +202,61 @@ interface BillpayPayInitParameterInterface
      * @return string
      */
     public function getAddressAddition();
+
+    /**
+     * @param string $zip
+     * @return $this
+     */
+    public function setZip($zip);
+
+    /**
+     * @return string
+     */
+    public function getZip();
+
+    /**
+     * @param string $city
+     * @return $this
+     */
+    public function setCity($city);
+
+    /**
+     * @return string
+     */
+    public function getCity();
+
+    /**
+     * @param string $country
+     * @return $this
+     */
+    public function setCountry($country);
+
+    /**
+     * @return string
+     */
+    public function getCountry();
+
+    /**
+     * @param string $email
+     * @return $this
+     */
+    public function setEmail($email);
+
+    /**
+     * @return string
+     */
+    public function getEmail();
+
+    /**
+     * @param string $phone
+     * @return $this
+     */
+    public function setPhone($phone);
+
+    /**
+     * @return string
+     */
+    public function getPhone();
 
     /**
      * @param int $dateofBirth

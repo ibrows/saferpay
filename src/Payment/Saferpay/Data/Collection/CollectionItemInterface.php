@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibrows\Saferpay\Data\Collection;
+namespace Payment\Saferpay\Data\Collection;
 
 interface CollectionItemInterface
 {

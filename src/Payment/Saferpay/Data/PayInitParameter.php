@@ -1,8 +1,8 @@
 <?php
 
-namespace Ibrows\Saferpay\Data;
+namespace Payment\Saferpay\Data;
 
-use Ibrows\Saferpay\Data\Collection\AbstractCollectionItem;
+use Payment\Saferpay\Data\Collection\AbstractCollectionItem;
 
 class PayInitParameter extends AbstractCollectionItem implements PayInitParameterInterface
 {

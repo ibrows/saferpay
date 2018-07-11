@@ -1,8 +1,8 @@
 <?php
 
-namespace Ibrows\Saferpay\Data\Billpay;
+namespace Payment\Saferpay\Data\Billpay;
 
-use Ibrows\Saferpay\Data\Collection\AbstractCollectionItem;
+use Payment\Saferpay\Data\Collection\AbstractCollectionItem;
 
 class BillpayPayCompleteResponse extends AbstractCollectionItem implements BillpayPayCompleteResponseInterface
 {

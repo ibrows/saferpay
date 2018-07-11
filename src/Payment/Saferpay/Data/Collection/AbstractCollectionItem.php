@@ -1,8 +1,8 @@
 <?php
 
-namespace Ibrows\Saferpay\Data\Collection;
+namespace Payment\Saferpay\Data\Collection;
 
-use Ibrows\Saferpay\SaferpayConditionConverter;
+use Payment\Saferpay\SaferpayConditionConverter;
 
 abstract class AbstractCollectionItem implements CollectionItemInterface
 {

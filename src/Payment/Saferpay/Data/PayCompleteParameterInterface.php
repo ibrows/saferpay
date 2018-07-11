@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibrows\Saferpay\Data;
+namespace Payment\Saferpay\Data;
 
 interface PayCompleteParameterInterface
 {
@@ -13,7 +13,7 @@ interface PayCompleteParameterInterface
     const ID = 'an[28]';
 
     /**
-     * Ibrows amount in the smallest currency unit.
+     * Payment amount in the smallest currency unit.
      * For example, "1230" corresponding amount in euro 12,30.
      */
     const AMOUNT = 'n[..8]';

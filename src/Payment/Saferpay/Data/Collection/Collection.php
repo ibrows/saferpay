@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibrows\Saferpay\Data\Collection;
+namespace Payment\Saferpay\Data\Collection;
 
 /**
  * ATTENTION: each collection item can override the fieldsnames and/or the request url

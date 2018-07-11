@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibrows\Saferpay\Data\Billpay;
+namespace Payment\Saferpay\Data\Billpay;
 
 interface BillpayPayCompleteParameterInterface
 {
